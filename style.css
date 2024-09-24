@@ -1,0 +1,182 @@
+body{
+    background-image: url("imgs/bg.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #ed2939;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.search-container {
+  position: relative;
+  width: 100%; 
+  max-width: 500px; 
+  display: inline-block;
+}
+
+#search {
+  width: 100%; 
+  padding-right: 35px; 
+  padding-left: 10px;
+  height: 50px;
+  font-size: 16px;
+  box-sizing: border-box; 
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+}
+
+.card-title{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.card-body,.card-footer{
+    border:none;
+}
+
+.skin-2 .num-in {
+	background: #FFFFFF;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 25px;
+	height: 40px;
+  width:100%;
+  float: left;
+    
+}
+
+.skin-2 .num-in	span {
+  width: 40%;
+  display: block;
+  height: 40px;
+  float: left;
+  position: relative;
+}
+
+.skin-2 .num-in span:before, .skin-2 .num-in span:after {
+  content: '';
+  position: absolute;
+  background-color: #667780;
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -5px;
+}
+
+.skin-2 .num-in span.plus:after {
+  transform: rotate(90deg);
+}
+
+.skin-2 .num-in input {
+		float: left;
+		width: 20%;
+		height: 40px;
+		border: none;
+		text-align: center;
+}
+
+.plus,.minus{
+    cursor: pointer;
+}
+
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 12px;
+    gap: 8px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    background: #FF342B;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 22px;
+    font-size: 17px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .add-to-cart:hover {
+    background: #e52e26;
+  }
+  
+  .add-to-cart:hover .svg-icon {
+    animation: slope 1s linear infinite;
+  }
+  
+  @keyframes slope {
+    0% {
+    }
+  
+    50% {
+      transform: rotate(10deg);
+    }
+  
+    100% {
+    }
+  }
+
+  hr{
+    width:100%;
+    color: cornsilk;
+    height: 3px;
+  }
+
+  #del_btn{
+    width:75%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(203, 0, 0);
+    border: none;
+    font-size:large;
+    cursor:pointer;
+    padding: 10px;
+}
+
+th{
+  text-align: center;
+}
+
+td{
+  font-size: large;
+}
+
+
+@media (max-width: 600px) {
+
+  .search-container {
+    width: 100%; 
+    max-width: 300px; 
+  }
+  
+  #search {
+      height: 35px;
+      font-size: 14px;
+  }
+
+  .search-icon {
+      font-size: 16px;
+  }
+
+  .add-to-cart{
+    width: 100%;
+    font-size: 12px;
+  }
+
+}

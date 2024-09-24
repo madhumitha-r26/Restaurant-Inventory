@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="imgs/logo.png">
+    <title>Restaurant Inventory</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">  YUMMY WORLD   </a>
+        </div>
+      </nav>
+<br>
+
+<center>
+<div class="search-container">
+  <input type="text" onkeyup="check(event)" id="search" placeholder="Type to search items">
+  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+</div>
+</center>
+   
+<br> 
+    
+<div class="row row-cols-3 row-cols-md-5 g-4 px-1 py-2">
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-1-milk.png" class="img-thumbnail" alt="Milk">
+        <div class="card-body">
+          <h5 class="card-title">Milk</h5>
+        </div>
+        <div class="card-footer">
+                <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-2-bread.png" class="img-thumbnail" alt="Bread">
+        <div class="card-body">
+          <h5 class="card-title">Bread</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+  Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-3-eggs.png" class="img-thumbnail" alt="Eggs">
+        <div class="card-body">
+          <h5 class="card-title">Eggs</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-4-honey.png" class="img-thumbnail" alt="Honey">
+        <div class="card-body">
+          <h5 class="card-title">Honey</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-5-tomato ketchup.png" class="img-thumbnail" alt="Tomato Ketchup">
+        <div class="card-body">
+          <h5 class="card-title">Tomato Ketchup</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-6-mayonnaise.png" class="img-thumbnail" alt="Mayonnaise">
+        <div class="card-body">
+          <h5 class="card-title">Mayonnaise</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-7-rice.png" class="img-thumbnail" alt="Rice">
+        <div class="card-body">
+          <h5 class="card-title">Rice</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-8-wheat.png" class="img-thumbnail" alt="Wheat">
+        <div class="card-body">
+          <h5 class="card-title">Wheat</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-9-maida.png" class="img-thumbnail" alt="Maida">
+        <div class="card-body">
+          <h5 class="card-title">Maida</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-10-salt.png" class="img-thumbnail" alt="Salt">
+        <div class="card-body">
+          <h5 class="card-title">Salt</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-11-pepper.png" class="img-thumbnail" alt="Pepper">
+        <div class="card-body">
+          <h5 class="card-title">Pepper</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-30-corn flour.png" class="img-thumbnail" alt="Corn Flour">
+        <div class="card-body">
+          <h5 class="card-title">Corn Flour</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-12-cumin powder.png" class="img-thumbnail" alt="Cumin Powder">
+        <div class="card-body">
+          <h5 class="card-title">Cumin Powder</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-13-turmeric powder.png" class="img-thumbnail" alt="Turmeric Powder">
+        <div class="card-body">
+          <h5 class="card-title">Turmeric Powder</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-14-chilli powder.png" class="img-thumbnail" alt="Chilli Powder">
+        <div class="card-body">
+          <h5 class="card-title">Chilli Powder</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card">
+          <img src="imgs/restarurant pantry images-15-mustard.png" class="img-thumbnail" alt="Mustard">
+          <div class="card-body">
+            <h5 class="card-title">Mustard</h5>
+          </div>
+          <div class="card-footer">
+            <div class="num-block skin-2">
+              <div class="num-in">
+                <span class="minus dis"></span>
+                <input type="text" class="in-num" value="0" readonly="">
+                <span class="plus"></span>
+              </div>
+            </div>
+            <br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-16-olive oil.png" class="img-thumbnail" alt="Olive Oil">
+        <div class="card-body">
+          <h5 class="card-title">Olive Oil</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-17-coconut oil.png" class="img-thumbnail" alt="Coconut Oil">
+        <div class="card-body">
+          <h5 class="card-title">Coconut Oil</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-18-fenugreek.png" class="img-thumbnail" alt="Fenugreek">
+        <div class="card-body">
+          <h5 class="card-title">Fenugreek</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-19-oregano.png" class="img-thumbnail" alt="Oregano">
+        <div class="card-body">
+          <h5 class="card-title">Oregano</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-20-butter.png" class="img-thumbnail" alt="Butter">
+        <div class="card-body">
+          <h5 class="card-title">Butter</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-21-cheese.png" class="img-thumbnail" alt="Cheese">
+        <div class="card-body">
+          <h5 class="card-title">Cheese</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-22-white vinegar.png" class="img-thumbnail" alt="White Vinegar">
+        <div class="card-body">
+          <h5 class="card-title">White Vinegar</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-23-apple cider vinegar.png" class="img-thumbnail" alt="Apple Cider Vinegar">
+        <div class="card-body">
+          <h5 class="card-title">Apple Cider Vinegar </h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-24-tea powder.png" class="img-thumbnail" alt="Tea Powder">
+        <div class="card-body">
+          <h5 class="card-title">Tea Powder</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-25-cocoa powder.png" class="img-thumbnail" alt="Cocoa Powder">
+        <div class="card-body">
+          <h5 class="card-title">Cocoa Powder</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-26-coffee powder.png" class="img-thumbnail" alt="Coffee Beans">
+        <div class="card-body">
+          <h5 class="card-title">Coffee Beans</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-27-oats.png" class="img-thumbnail" alt="Oats">
+        <div class="card-body">
+          <h5 class="card-title">Oats</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+        <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-28-vanilla extract.png" class="img-thumbnail" alt="Vanilla Extract">
+        <div class="card-body">
+          <h5 class="card-title">Vanilla Extract</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+        <img src="imgs/restarurant pantry images-29-baking soda.png" class="img-thumbnail" alt="Baking Soda">
+        <div class="card-body">
+          <h5 class="card-title">Baking Soda</h5>
+        </div>
+        <div class="card-footer">
+            <div class="num-block skin-2">
+  <div class="num-in">
+    <span class="minus dis"></span>
+    <input type="text" class="in-num" value="0" readonly="">
+    <span class="plus"></span>
+  </div>
+</div>
+<br>
+<br>
+<button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>
+Add Item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr style="color: azure;height: 5px;">
+
+<h3 style="color: azure;" class="text-center">MY CART</h3>
+
+<table class="table" id="cart-table">
+  <thead>
+    <tr class="table-info">
+        <th>Item</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+       <tr>
+        <td><img src="imgs/restarurant pantry images-4-honey.png" alt="Honey" style="width: 80px; height: 80px;"></td>
+        <td>Honey</td>
+        <td>3</td>
+        <td><button class="delete-btn" id="del_btn" onclick="delete_item(event)"><i class="fa-regular fa-trash-can"></i>&nbsp; DELETE</button></td>
+       </tr>
+
+       <tr>
+        <td><img src="imgs/restarurant pantry images-2-bread.png" alt="Bread" style="width: 80px; height: 80px;"></td>
+        <td>Bread</td>
+        <td>6</td>
+        <td><button class="delete-btn" id="del_btn" onclick="delete_item(event)"><i class="fa-regular fa-trash-can"></i>&nbsp; DELETE</button></td>
+       </tr>
+</tbody>
+</table>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
