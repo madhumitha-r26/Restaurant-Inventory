@@ -148,6 +148,15 @@ body{
     cursor:pointer;
     padding: 10px;
 }
+  #del_btn:hover{
+    width:75%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border: none;
+    font-size:large;
+    cursor:pointer;
+    padding: 10px;
+}
 
 th{
   text-align: center;
@@ -157,6 +166,12 @@ td{
   font-size: large;
 }
 
+.card .img-thumbnail, .card .card-body, .card .card-footer{
+  border: none;
+}
+.card{
+  border-radius: 0px;
+}
 
 @media (max-width: 600px) {
 
