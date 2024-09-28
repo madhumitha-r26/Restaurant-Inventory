@@ -1,4 +1,4 @@
-I have created a Restaurant Pantry Website.
+I have created a Restaurant Pantry Website for a web development hackathon.
 
 Technologies used:
 - HTML - Website structure
